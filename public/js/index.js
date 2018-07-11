@@ -12,3 +12,11 @@ socket.on('disconnect', function() {
 socket.on('newMessage', function(message) {
     console.log('newMessage', message);
 });
+
+socket.on('welcomeMessage', function(message) {
+    console.log( message);
+});
+
+socket.on('newUser', function(message) {
+    console.log(message);
+});
